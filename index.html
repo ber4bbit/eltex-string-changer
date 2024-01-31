@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./script.js" defer></script>
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+        }
+
+        .content {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <input type="text" placeholder="Введите длину строки" id="stringLengthInput">
+            <button id="generateStringBtn">Сгенерировать строку</button>
+            <span id="generatedString"></span>
+            <input type="text" placeholder="Введите первый символ (латинский алфавит, кроме 's', 'p', 'c', 'x')"
+                id="newSymbol" disabled>
+            <button id="newSymbolBtn" disabled>Сгенерировать строку</button>
+            <span id="newSymbolCount"></span>
+            <input type="text" placeholder="Введите второй символ (латинский алфавит, кроме 's', 'p', 'c', 'x')"
+                id="secondSymbol" disabled>
+            <button id="secondSymbolBtn" disabled>Сгенерировать строку</button>
+            <span id="secondSymbolCount"></span>
+        </div>
+    </div>
+</body>
+
+</html>
